@@ -7,7 +7,7 @@ GShell is a lightweight command-line shell implemented in Go, designed for educa
 ## Features
 
 ### Current Features
-✅ Basic command execution (e.g., `ls`, `pwd`, `echo`)
+✅ Basic command execution (e.g., `ls`, `pwd`, `echo`) \n
 ✅ Change directory (`cd`) command
 ✅ Command pipelines (`|`)
 ✅ Colored output and error messages
