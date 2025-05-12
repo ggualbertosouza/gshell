@@ -8,6 +8,18 @@ import (
 
 func Exec(input string) error {
 	input = strings.TrimSuffix(input, "\n")
+	pipeline := strings.Split(input, "|")
+
+	if len(pipeline) > 1 {
+		for _, command := range pipeline {
+			execCommand(command)
+		}
+	}
+
+	return execCommand(input)
+}
+
+func execCommand(input string) error {
 	args := strings.Split(input, " ")
 
 	switch args[0] {
